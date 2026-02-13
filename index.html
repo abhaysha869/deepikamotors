@@ -268,13 +268,39 @@
 
         .brand-item {
             background: var(--bg-light);
-            padding: 15px 30px;
-            border-radius: 5px;
+            padding: 20px;
+            border-radius: 8px;
             font-weight: bold;
             color: var(--secondary);
             border-bottom: 3px solid var(--accent);
             flex-grow: 1;
             min-width: 150px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .brand-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-bottom-color: var(--primary);
+        }
+
+        .brand-item img {
+            height: 50px;
+            max-width: 100px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: 0.3s;
+        }
+
+        .brand-item:hover img {
+            filter: grayscale(0%);
         }
 
         /* --- ABOUT & SERVICES --- */
@@ -443,14 +469,54 @@
     <section class="brands">
         <h2>We Deal In Top Brands</h2>
         <div class="brand-grid">
-            <div class="brand-item">MARUTI SUZUKI</div>
-            <div class="brand-item">HYUNDAI</div>
-            <div class="brand-item">TATA MOTORS</div>
-            <div class="brand-item">MAHINDRA</div>
-            <div class="brand-item">VOLKSWAGEN</div>
-            <div class="brand-item">SKODA</div>
-            <div class="brand-item">TOYOTA</div>
-            <div class="brand-item">HONDA</div>
+            <a href="https://www.marutisuzuki.com" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/marutisuzuki.com" alt="Maruti Suzuki Logo">
+                <span>MARUTI SUZUKI</span>
+            </a>
+            <a href="https://www.hyundai.com/in" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/hyundai.com" alt="Hyundai Logo">
+                <span>HYUNDAI</span>
+            </a>
+            <a href="https://cars.tatamotors.com" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/tatamotors.com" alt="Tata Motors Logo">
+                <span>TATA MOTORS</span>
+            </a>
+            <a href="https://auto.mahindra.com" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/mahindra.com" alt="Mahindra Logo">
+                <span>MAHINDRA</span>
+            </a>
+            <a href="https://www.toyotabharat.com" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/toyota.com" alt="Toyota Logo">
+                <span>TOYOTA</span>
+            </a>
+            <a href="https://www.hondacarindia.com" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/honda.com" alt="Honda Logo">
+                <span>HONDA</span>
+            </a>
+            <a href="https://www.volkswagen.co.in" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/vw.com" alt="Volkswagen Logo">
+                <span>VOLKSWAGEN</span>
+            </a>
+            <a href="https://www.skoda-auto.co.in" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/skoda-auto.com" alt="Skoda Logo">
+                <span>SKODA</span>
+            </a>
+            <a href="https://www.kia.com/in" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/kia.com" alt="Kia Logo">
+                <span>KIA</span>
+            </a>
+            <a href="https://www.renault.co.in" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/renault.com" alt="Renault Logo">
+                <span>RENAULT</span>
+            </a>
+            <a href="https://www.nissan.in" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/nissan-global.com" alt="Nissan Logo">
+                <span>NISSAN</span>
+            </a>
+            <a href="https://www.mgmotor.co.in" target="_blank" class="brand-item">
+                <img src="https://logo.clearbit.com/mg.co.uk" alt="MG Logo">
+                <span>MG MOTOR</span>
+            </a>
         </div>
     </section>
 
