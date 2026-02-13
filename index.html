@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepika Motors - Ranchi | Genuine Auto Parts Wholesaler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* --- CLASSY PROFESSIONAL THEME --- */
+        :root {
+            --primary: #0f172a;       /* Midnight Blue (Trust/Class) */
+            --secondary: #1e293b;     /* Dark Slate (Modern) */
+            --accent: #d97706;        /* Golden/Amber (Highlight/Premium) */
+            --text-dark: #333333;
+            --text-light: #f8fafc;
+            --bg-light: #f1f5f9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* --- TOP BAR (Contact Info) --- */
+        .top-bar {
+            background-color: var(--secondary);
+            color: var(--text-light);
+            padding: 10px 5%;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .top-bar a { color: var(--text-light); text-decoration: none; margin-left: 15px; }
+        .top-bar i { color: var(--accent); margin-right: 5px; }
+
+        /* --- HEADER --- */
+        header {
+            background-color: white;
+            padding: 1.5rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .nav-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-btn:hover { background-color: var(--accent); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            /* Clean, dark automotive background */
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #cbd5e1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border: 1px solid var(--accent);
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+
+        /* --- BRANDS SECTION --- */
+        .brands {
+            padding: 60px 10%;
+            background: white;
+            text-align: center;
+        }
+        .brands h2 { color: var(--primary); margin-bottom: 40px; font-size: 2rem; }
+        
+        .brand-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .brand-item {
+            background: var(--bg-light);
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: var(--secondary);
+            border-bottom: 3px solid var(--accent);
+            flex-grow: 1;
+            min-width: 150px;
+        }
+
+        /* --- ABOUT & SERVICES --- */
+        .container {
+            padding: 80px 10%;
+            background-color: var(--bg-light);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .text-block h2 { font-size: 2.2rem; color: var(--primary); margin-bottom: 20px; }
+        .text-block p { margin-bottom: 15px; font-size: 1.1rem; }
+        
+        .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .info-card h3 { color: var(--accent); margin-bottom: 10px; }
+
+        /* --- CONTACT FOOTER --- */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 5% 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 40px;
+        }
+
+        .footer-section { flex: 1; min-width: 250px; }
+        .footer-section h3 { color: var(--accent); margin-bottom: 20px; font-size: 1.3rem; }
+        .footer-section p { margin-bottom: 10px; color: #cbd5e1; }
+        .footer-section a { color: white; text-decoration: none; }
+        .footer-section i { margin-right: 10px; color: var(--accent); }
+
+        .copyright { text-align: center; font-size: 0.9rem; color: #94a3b8; }
+
+        /* --- MOBILE RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .details-grid { grid-template-columns: 1fr; }
+            .top-bar { flex-direction: column; gap: 10px; text-align: center; }
+            .top-bar a { margin: 0 10px; }
+            .footer-content { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span><i class="fas fa-certificate"></i> Authorized Wholesaler Since 25 Years</span>
+        <div>
+            <a href="tel:9999999999"><i class="fas fa-phone-alt"></i> 99999-99999</a>
+            <a href="mailto:abhaysha869@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">DEEPIKA MOTORS</div>
+        <a href="#contact" class="nav-btn">Contact Us</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Auto Parts <br> in Ranchi</h1>
+            <p>We deal in Genuine spare parts and accessories with a wide range of inventory. Serving you for over 25 years.</p>
+            
+            <div class="hero-badges">
+                <div class="badge">Four-Wheeler Specialist</div>
+                <div class="badge">Wholesale & Retail</div>
+                <div class="badge">100% Genuine</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <h2>We Deal In Top Brands</h2>
+        <div class="brand-grid">
+            <div class="brand-item">MARUTI SUZUKI</div>
+            <div class="brand-item">HYUNDAI</div>
+            <div class="brand-item">TATA MOTORS</div>
+            <div class="brand-item">MAHINDRA</div>
+            <div class="brand-item">VOLKSWAGEN</div>
+            <div class="brand-item">SKODA</div>
+            <div class="brand-item">TOYOTA</div>
+            <div class="brand-item">HONDA</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="details-grid">
+            <div class="text-block">
+                <h2>Your Trusted Partner in Automobile Care</h2>
+                <p>Located on Kutchery Road, Deepika Motors has been a staple in Ranchi's automotive industry for over two decades. We understand that your vehicle needs the best care, which is why we strictly deal in genuine parts.</p>
+                <p>Whether you are a garage owner looking for wholesale rates or a car owner needing a specific accessory, our massive inventory ensures you don't walk away empty-handed.</p>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-check-circle"></i> Why Choose Us?</h3>
+                <p style="margin-bottom: 10px;"><strong>Experience:</strong> 25+ Years in the market.</p>
+                <p style="margin-bottom: 10px;"><strong>Inventory:</strong> Massive stock of engine parts, body parts, and accessories.</p>
+                <p style="margin-bottom: 10px;"><strong>Price:</strong> Competitive wholesale pricing.</p>
+                <p><strong>Trust:</strong> Authorized retailer for major companies.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Visit Store</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Deepika Motors</strong></p>
+                <p>Near Chaity Durga Puja Complex,</p>
+                <p>Kutchery Road, Ranchi,</p>
+                <p>Jharkhand.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><a href="tel:9999999999"><i class="fas fa-phone"></i> +91 99999-99999</a></p>
+                <p><a href="mailto:abhaysha869@gmail.com"><i class="fas fa-envelope"></i> abhaysha869@gmail.com</a></p>
+                <p><i class="fas fa-clock"></i> Mon - Sat: 10:00 AM - 8:00 PM</p>  
+            </div>
+            <div class="footer-section">
+                <h3>Our Promise</h3>
+                <p>We are committed to providing only original and high-quality spare parts to ensure the safety and longevity of your vehicle.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Deepika Motors Ranchi. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
