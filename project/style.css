@@ -339,9 +339,85 @@ header.scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
     /* Slight tint for integration */
     pointer-events: none;
+    z-index: 1;
+}
+
+/* --- CINEMATIC SLIDESHOW --- */
+.cinematic-slideshow {
+    background: #000;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: kenBurns 16s infinite;
+}
+
+.slide-1 {
+    background-image: url('assets/images/mechanic.jpg');
+    animation-delay: 0s;
+}
+
+.slide-2 {
+    background-image: url('assets/images/inventory.jpg');
+    animation-delay: 8s;
+}
+
+@keyframes kenBurns {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.slideshow-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.slideshow-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--accent);
+}
+
+height: 100%;
+background: rgba(0, 0, 0, 0.1);
+/* Slight tint for integration */
+pointer-events: none;
 }
 
 .brand-item::before {
