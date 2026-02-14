@@ -414,12 +414,6 @@ header.scrolled {
     color: var(--accent);
 }
 
-height: 100%;
-background: rgba(0, 0, 0, 0.1);
-/* Slight tint for integration */
-pointer-events: none;
-}
-
 .brand-item::before {
     content: '';
     position: absolute;
