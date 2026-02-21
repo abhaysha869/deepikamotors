@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Circle -->
+  <circle cx="100" cy="90" r="80" fill="none" stroke="#2a3439" stroke-width="4" />
+  
+  <!-- Inner Circle (Off-center/Intersecting look based on description/memory of typical wire logos) -->
+  <!-- Trying to match "concentric" but maybe slightly offset for the wire roll look -->
+  <circle cx="100" cy="110" r="60" fill="none" stroke="#2a3439" stroke-width="4" />
+  
+  <!-- The "M" -->
+  <text x="100" y="135" font-family="Arial, sans-serif" font-weight="bold" font-size="60" text-anchor="middle" fill="#000000">M</text>
+  
+  <!-- Horizontal Lines (Wires) -->
+  <line x1="0" y1="150" x2="200" y2="140" stroke="#2a3439" stroke-width="3" />
+  <line x1="0" y1="165" x2="200" y2="155" stroke="#2a3439" stroke-width="3" />
+  
+  <!-- Tagline -->
+  <text x="100" y="185" font-family="Arial, sans-serif" font-weight="bold" font-size="16" text-anchor="middle" fill="#000000">Aiming Higher</text>
+</svg>
